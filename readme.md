@@ -84,7 +84,7 @@ yarn add babel-loader @babel/core @babel/preset-env -D
 **4. 运行```yarn run build ```**   
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d79ac4c3dfb44df2b35f397ced581464~tplv-k3u1fbpfcp-zoom-1.image)
 可以看到能const 能转成var，但是Array.from 还不能成功；  
-这是因为**@babel/preset-env** 默认只转换新的 JavaScript语法，而不转换新的 API，Array.from 就属于新的api，如果要转换，需要增加另外的依赖
+这是因为 **@babel/preset-env** 默认只转换新的 JavaScript语法，而不转换新的 API，Array.from 就属于新的api，如果要转换，需要增加另外的依赖
 
 
 **5. 下面通过2种依赖方式`@babel/polyfill` 和 `@babel/runtime`分别描述， 任选一种即可**
