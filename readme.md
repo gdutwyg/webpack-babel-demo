@@ -1,4 +1,3 @@
-## webpack4.x结合babel的简单实践
 最近在弄个需求，突然要加入babel的支持，大家都知道babel是转码器，把高版本js代码转成低版本js代码，去兼容低版本的浏览器，本文是入门篇，把这些过程从0到1记录一下，方便后续查阅， **项目源码已上传到[github](https://github.com/gdutwyg/webpack-babel-demo)**
 
 ### 搭建webpack
@@ -33,12 +32,10 @@ module.exports = {
 `--mode development`打包出来的代码是不会压缩，方便阅读，适合开发环境    
 ```json
 {
-  ...,
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development"
   }
-  ...
 }
 ```
 **6. 执行 ```yarn run build```**   
@@ -115,7 +112,7 @@ yarn add @babel/polyfill -D
   ]
 }
 ```
-运行 ``` yarn run build ``` 即可看到打包完成
+运行 ``` yarn run build ``` 即可看到打包完成   
 ![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2aa42286063647b78d9293a4e59ca43b~tplv-k3u1fbpfcp-zoom-1.image)
 
 **5.2 安装好依赖 （第二种方式）**
@@ -141,7 +138,7 @@ yarn add @babel/polyfill -D
 }
 
 ```
-运行 ``` yarn run build ``` 即可看到打包完成
+运行 ``` yarn run build ``` 即可看到打包完成    
 ![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/34ffd28eec5844e1b8bcce279d586d7d~tplv-k3u1fbpfcp-zoom-1.image)
 
 **6. 依赖区别**  
