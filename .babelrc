@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env"
+      // 注释的这部分是@babel-polyfill的配置
+      // {
+      //   "targets": {
+      //     "chrome": "39" // 具体版本可以自己配置
+      //   },
+      //   "useBuiltIns": "usage",
+      //   "corejs": 2
+      // }
+    ]
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 3
+      }
+    ]
+  ]
+}
